@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(10, 9, 20);
+    font-family: Manrope;
+    color: rgb(207, 206, 223);   
+}
+
+h1{
+    font-size: 2rem;
+    color: white;
+}
+p{
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+}
+#header{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-image: url('https://picsum.photos/800/800');
+    object-fit: cover;
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+#search-box{
+    background-color: rgba(255, 255, 255, 0.16);
+    color: white;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin-top: 2rem;
+    min-width: 30%;
+    max-width: 90%;
+}
+
+.centerh{      
+    left: 50%;                        
+    transform: translate(-50%, 0)
+}
+  
+.centerv{      
+    top: 50%;                        
+    transform: translate(0, -50%)
+}
+  
+abbr[title] {
+border-bottom: none !important;
+cursor: inherit !important;
+text-decoration: none !important;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    overflow: overlay;
+    width: 5px;
+    z-index: 100;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    overflow: overlay;
+    z-index: 100;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    visibility: visible;
+    border-radius: 100px;
+    width: 3px;
+    background-color: #d8d8d8;
+    z-index: 150;
+}
+
+img{
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-webkit-touch-callout: none;
+pointer-events: none;
+}
+
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-webkit-autofill:focus {
+-webkit-box-shadow: 0 0 0 50px white inset;
+-webkit-text-fill-color: rgb(0, 0, 0);
+}
+
+.pc{
+visibility: visible;
+display: flex;
+}
+
+.mob{
+visibility: hidden;
+display: none;
+}
+
+.pclg{
+visibility: visible;
+display: auto;
+}
+
+.moblg{
+visibility: hidden;
+display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+.mob{
+visibility: visible;
+display:flex;
+}
+.pc{
+visibility: hidden;
+display: none;
+}
+}
+
+@media screen and (max-width: 1024px) {
+
+.pclg{
+    visibility: hidden;
+    display: none;
+}
+
+.moblg{
+    visibility: visible;
+    display:flex;
+}
+}
