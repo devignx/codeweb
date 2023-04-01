@@ -1,5 +1,12 @@
+html{
+    padding:0px;
+    margin: 0%;
+}
+
 body{
     background-color: rgb(10, 9, 20);
+    padding: 0;
+    margin: 0;
     font-family: Manrope;
     color: rgb(207, 206, 223);   
 }
@@ -14,16 +21,48 @@ p{
     margin: auto;
 }
 #header{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    background-image: url('https://picsum.photos/800/800');
-    object-fit: cover;
+    position: relative;
+    overflow: hidden;
     width: 100%;
+    padding-top:10rem ;
+    padding-bottom: 10rem;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
 }
+#side-bar{
+    height: 100vh;
+    width: 25%;
+    background-color: rgb(63, 49, 53);
+    position: fixed;
+    top: 0;
+    color: white;    
+    display: flex;
+    flex-direction: column;
+}
+
+#side-bar ul li :hover{
+    opacity: 100;
+}
+#side-1 ul li {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: rgb(228, 193, 200);
+    list-style: none;
+    font-size: small;
+}
+
+#side-1 ul :hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+#side-1 ul{
+    margin-top: 2rem;
+    font-size: larger;
+}
+
 #search-box{
     background-color: rgba(255, 255, 255, 0.16);
     color: white;
@@ -34,22 +73,6 @@ p{
     margin-top: 2rem;
     min-width: 30%;
     max-width: 90%;
-}
-
-.centerh{      
-    left: 50%;                        
-    transform: translate(-50%, 0)
-}
-  
-.centerv{      
-    top: 50%;                        
-    transform: translate(0, -50%)
-}
-  
-abbr[title] {
-border-bottom: none !important;
-cursor: inherit !important;
-text-decoration: none !important;
 }
 
 
@@ -75,22 +98,6 @@ text-decoration: none !important;
     z-index: 150;
 }
 
-img{
-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
--webkit-touch-callout: none;
-pointer-events: none;
-}
-
-input:-webkit-autofill {
--webkit-box-shadow: 0 0 0px 1000px white inset;
-}
-
-input:-webkit-autofill:focus {
--webkit-box-shadow: 0 0 0 50px white inset;
--webkit-text-fill-color: rgb(0, 0, 0);
-}
 
 .pc{
 visibility: visible;
@@ -134,5 +141,11 @@ display: none;
 .moblg{
     visibility: visible;
     display:flex;
+}
+h1{
+    font-size: larger;
+}
+p{
+    font-size: small;
 }
 }
